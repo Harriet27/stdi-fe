@@ -5,6 +5,7 @@ const navItems = [
   ['Beranda', '/'],
   ['Tentang Kami', '/tentang'],
   ['Agenda', '/agenda'],
+  ['Reels', '/reels'],
   ['Sangha', '/sangha'],
   ['Kontak', '/#kontak'],
 ]
