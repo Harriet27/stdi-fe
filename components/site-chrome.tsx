@@ -4,12 +4,13 @@ import { ArrowUpRight, Menu } from "lucide-react";
 import logostdi from "../assets/logo-stdi.png";
 
 const navItems = [
-  ["Beranda", "/"],
-  ["Tentang Kami", "/tentang"],
-  ["Agenda", "/agenda"],
-  ["Sangha", "/sangha"],
-  ["Kontak", "/#kontak"],
-];
+  ['Beranda', '/'],
+  ['Tentang Kami', '/tentang'],
+  ['Agenda', '/agenda'],
+  ['Reels', '/reels'],
+  ['Sangha', '/sangha'],
+  ['Kontak', '/#kontak'],
+]
 
 export function SiteHeader() {
   return (
