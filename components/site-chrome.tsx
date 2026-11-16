@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Menu } from "lucide-react";
+import logostdi from "../assets/logo-stdi.png";
 
 const navItems = [
   ["Beranda", "/"],
@@ -18,10 +20,17 @@ export function SiteHeader() {
       </div>
       <header className="site-header wrap">
         <Link href="/" className="brand" aria-label="STDI, beranda">
-          <span className="brand-mark">B</span>
+          <Image
+            src={logostdi}
+            alt="logo-stdi"
+            height={50}
+            width={50}
+          />
           <span>
             <strong>STDI</strong>
-            <small>VIHARA & PUSAT DHAMMA</small>
+            <small style={{ textTransform: 'uppercase' }}>
+              Saṅgha Theravāda Dhammayut Indonesia
+            </small>
           </span>
         </Link>
         <nav aria-label="Navigasi utama">
