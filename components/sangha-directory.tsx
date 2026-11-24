@@ -92,9 +92,9 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
 
           return (
             <Link
-              href={`/sangha/${person.slug}`}
+              href={`/sangha/${person.id}`}
               className="sangha-card"
-              key={`${person.slug}-${startIndex + i}`}
+              key={person.id}
             >
               <div className={`monk-portrait portrait-${portraitIndex}`}>
                 <div className="portrait-halo" />

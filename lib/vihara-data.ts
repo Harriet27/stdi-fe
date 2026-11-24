@@ -51,6 +51,7 @@ export const events = [
 
 export const sangha = [
   {
+    id: 1,
     slug: "bhikkhu-wongsin-lābhiko",
     upasampada: {
       name: "Bhikkhu Wongsin Lābhiko",
@@ -69,6 +70,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha, Lembang - Bandung"
   },
   {
+    id: 2,
     slug: "bhikkhu-weerasin-khantiko",
     upasampada: {
       name: "Bhikkhu Weerasin Khantiko",
@@ -87,6 +89,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   },
   {
+    id: 3,
     slug: "bhikkhu-khampun-suvaṇṇadharo",
     upasampada: {
       name: "Bhikkhu Khampun Suvaṇṇadharo",
@@ -105,6 +108,7 @@ export const sangha = [
     domisili: "Cetiya Tiratana Parami - Jakarta Utara"
   },
   {
+    id: 4,
     slug: "bhikkhu-kamsai-sumano",
     upasampada: {
       name: "Bhikkhu Kamsai Sumano",
@@ -123,6 +127,7 @@ export const sangha = [
     domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
   },
   {
+    id: 5,
     slug: "bhikkhu-chatchawan-iddhivijjo",
     upasampada: {
       name: "Bhikkhu Chatchawan Iddhivijjo",
@@ -141,6 +146,7 @@ export const sangha = [
     domisili: "Vihara Dhamma Metta Arama - Pekanbaru"
   },
   {
+    id: 6,
     slug: "bhikkhu-mahā-wirat-khemacārī",
     upasampada: {
       name: "Bhikkhu Mahā Wirat Khemacārī",
@@ -159,6 +165,7 @@ export const sangha = [
     domisili: "Vihara Bangka Dhammaram - Bangka"
   },
   {
+    id: 7,
     slug: "bhikkhu-subin-ghosito",
     upasampada: {
       name: "Bhikkhu Subin Ghosito",
@@ -177,6 +184,7 @@ export const sangha = [
     domisili: "Cetiya Maha Virya Arama - Bogor"
   },
   {
+    id: 8,
     slug: "bhikkhu-thonglek-aggadhammo",
     upasampada: {
       name: "Bhikkhu Thonglek Aggadhammo",
@@ -195,6 +203,7 @@ export const sangha = [
     domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
   },
   {
+    id: 9,
     slug: "bhikkhu-prasan-tejadharo",
     upasampada: {
       name: "Bhikkhu Prasan Tejadharo",
@@ -213,6 +222,7 @@ export const sangha = [
     domisili: "Cetiya Buddha Jaya Mangala - Kota Tangerang"
   },
   {
+    id: 10,
     slug: "bhikkhu-nu-hajjatejo",
     upasampada: {
       name: "Bhikkhu Nu Hajjatejo",
@@ -231,6 +241,7 @@ export const sangha = [
     domisili: "Vihara Buddha Dhamma Thitaviriyo - Jakarta Utara"
   },
   {
+    id: 11,
     slug: "bhikkhu-suwan-uṭṭhāno",
     upasampada: {
       name: "Bhikkhu Suwan Uṭṭhāno",
@@ -249,6 +260,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 12,
     slug: "bhikkhu-nāthasīlo",
     upasampada: {
       name: "Bhikkhu Nāthasīlo",
@@ -267,6 +279,7 @@ export const sangha = [
     domisili: "Nekkhamma Forest Meditation Centre - Sodong"
   },
   {
+    id: 13,
     slug: "bhikkhu-tawan-aggatejo",
     upasampada: {
       name: "Bhikkhu Tawan Aggatejo",
@@ -285,6 +298,7 @@ export const sangha = [
     domisili: "Pondok Meditasi Asri Jakasampurna - Bekasi"
   },
   {
+    id: 14,
     slug: "bhikkhu-subhācāro",
     upasampada: {
       name: "Bhikkhu Subhācāro",
@@ -303,6 +317,7 @@ export const sangha = [
     domisili: "Wisma Bhikkhu Jaya Wijaya - Temanggung"
   },
   {
+    id: 15,
     slug: "bhikkhu-ṭhitasaddho",
     upasampada: {
       name: "Bhikkhu Ṭhitasaddho",
@@ -321,6 +336,7 @@ export const sangha = [
     domisili: "Buddhist Meditation Centre - Medan"
   },
   {
+    id: 16,
     slug: "bhikkhu-kosalo",
     upasampada: {
       name: "Bhikkhu Kosalo",
@@ -339,6 +355,7 @@ export const sangha = [
     domisili: "Nekkhamma Forest Meditation Centre - Sodong,"
   },
   {
+    id: 17,
     slug: "bhikkhu-abhipuñño",
     upasampada: {
       name: "Bhikkhu Abhipuñño",
@@ -357,6 +374,7 @@ export const sangha = [
     domisili: "Vihāra Siddharta - Tangerang Selatan"
   },
   {
+    id: 18,
     slug: "bhikkhu-kittipañño",
     upasampada: {
       name: "Bhikkhu Kittipañño",
@@ -375,6 +393,7 @@ export const sangha = [
     domisili: "Vihara Cycloop Dhamma Jaya - Sentani, Papua"
   },
   {
+    id: 19,
     slug: "bhikkhu-ṭhānuttaro",
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
@@ -393,6 +412,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 20,
     slug: "bhikkhu-atijāgaro",
     upasampada: {
       name: "Bhikkhu Atijāgaro",
@@ -411,6 +431,7 @@ export const sangha = [
     domisili: "Pusdiklat Sadar Indonesia - Serpong Utara"
   },
   {
+    id: 21,
     slug: "bhikkhu-atthakovido",
     upasampada: {
       name: "Bhikkhu Atthakovido",
@@ -429,6 +450,7 @@ export const sangha = [
     domisili: "Santi Sukha Arama - Bogor"
   },
   {
+    id: 22,
     slug: "bhikkhu-dhammāvudho",
     upasampada: {
       name: "Bhikkhu Dhammāvudho",
@@ -447,6 +469,7 @@ export const sangha = [
     domisili: "Cetiya Panna Sikkha - Jakarta Barat"
   },
   {
+    id: 23,
     slug: "bhikkhu-ṭhānuttaro",
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
@@ -465,6 +488,7 @@ export const sangha = [
     domisili: "Pusdiklat Buddha Belitung - Belitung"
   },
   {
+    id: 24,
     slug: "bhikkhu-punnawich",
     upasampada: {
       name: "Bhikkhu Punnawich",
@@ -483,6 +507,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   },
   {
+    id: 25,
     slug: "bhikkhu-jhanananda",
     upasampada: {
       name: "Bhikkhu Jhanananda",
@@ -501,6 +526,7 @@ export const sangha = [
     domisili: "Nekkhamma Forest Meditation Centre - Sodong"
   },
   {
+    id: 26,
     slug: "bhikkhu-kalyāṇadhammo",
     upasampada: {
       name: "Bhikkhu Kalyāṇadhammo",
@@ -519,6 +545,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   },
   {
+    id: 27,
     slug: "bhikkhu-kittichai-sudhammo",
     upasampada: {
       name: "Bhikkhu Kittichai Sudhammo",
@@ -537,6 +564,7 @@ export const sangha = [
     domisili: "Vihara Attha Naga Vimutti"
   },
   {
+    id: 28,
     slug: "bhikkhu-candasīlo",
     upasampada: {
       name: "Bhikkhu Candasīlo",
@@ -555,6 +583,7 @@ export const sangha = [
     domisili: "Vihara Buddha Jayanti - Bekasi"
   },
   {
+    id: 29,
     slug: "bhikkhu-paññāvajiro",
     upasampada: {
       name: "Bhikkhu Paññāvajiro",
@@ -573,6 +602,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 30,
     slug: "bhikkhu-guṇadhammo",
     upasampada: {
       name: "Bhikkhu Guṇadhammo",
@@ -591,6 +621,7 @@ export const sangha = [
     domisili: "Vihara Hutan Bhuridatta - Bangka"
   },
   {
+    id: 31,
     slug: "bhikkhu-vaḍḍhano",
     upasampada: {
       name: "Bhikkhu Vaḍḍhano",
@@ -609,6 +640,7 @@ export const sangha = [
     domisili: "Nekkhamma Forest Meditation Centre - Sodong"
   },
   {
+    id: 32,
     slug: "bhikkhu-abhāgamo",
     upasampada: {
       name: "Bhikkhu Abhāgamo",
@@ -627,6 +659,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 33,
     slug: "bhikkhu-woraphol-ratindharo",
     upasampada: {
       name: "Bhikkhu Woraphol Ratindharo",
@@ -645,6 +678,7 @@ export const sangha = [
     domisili: "Cetiya Mahakusala Poris - Kota Tangerang"
   },
   {
+    id: 34,
     slug: "bhikkhu-vichan-pavaro",
     upasampada: {
       name: "Bhikkhu Vichan Pavaro",
@@ -663,6 +697,7 @@ export const sangha = [
     domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
   },
   {
+    id: 35,
     slug: "bhikkhu-wongsathorn-candavaṁso",
     upasampada: {
       name: "Bhikkhu Wongsathorn Candavaṁso",
@@ -681,6 +716,7 @@ export const sangha = [
     domisili: "Vihara Samakkhidham - Jakarta Barat"
   },
   {
+    id: 36,
     slug: "bhikkhu-natthaphong-sudhammo",
     upasampada: {
       name: "Bhikkhu Natthaphong Sudhammo",
@@ -699,6 +735,7 @@ export const sangha = [
     domisili: "Vihara Vimuttara - Jambi"
   },
   {
+    id: 37,
     slug: "bhikkhu-cittasanto",
     upasampada: {
       name: "Bhikkhu Cittasanto",
@@ -717,6 +754,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   },
   {
+    id: 38,
     slug: "bhikkhu-ghosako",
     upasampada: {
       name: "Bhikkhu Ghosako",
@@ -735,6 +773,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 39,
     slug: "bhikkhu-abhirato",
     upasampada: {
       name: "Bhikkhu Abhirato",
@@ -753,6 +792,7 @@ export const sangha = [
     domisili: "Vihara Siddharta - Tangerang Selatan"
   },
   {
+    id: 40,
     slug: "bhikkhu-cittarakkho",
     upasampada: {
       name: "Bhikkhu Cittarakkho",
@@ -771,6 +811,7 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   },
   {
+    id: 41,
     slug: "bhikkhu-saccañāṇo",
     upasampada: {
       name: "Bhikkhu Saccañāṇo",
@@ -789,6 +830,7 @@ export const sangha = [
     domisili: "Vihara Indonesia Bodhgaya - Gaya, India"
   },
   {
+    id: 42,
     slug: "bhikkhu-kusalo",
     upasampada: {
       name: "Bhikkhu Kusalo",
@@ -807,6 +849,7 @@ export const sangha = [
     domisili: "-"
   },
   {
+    id: 43,
     slug: "bhikkhu-chandadhammo",
     upasampada: {
       name: "Bhikkhu Chandadhammo",
@@ -825,4 +868,3 @@ export const sangha = [
     domisili: "Vihara Vipassana Graha - Lembang, Bandung"
   }
 ];
-

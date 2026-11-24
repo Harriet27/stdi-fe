@@ -5,27 +5,6 @@ import { ArrowLeft, ArrowRight, MapPin, Sparkles } from "lucide-react";
 import { sangha } from "@/lib/vihara-data";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
-interface BhikkhuRecord {
-  slug: string;
-  upasampada: {
-    name: string;
-    namePenahbisan: string;
-    tempatPenahbisan: string;
-    tanggalPenahbisan: string;
-    NameUpajjhaya: string;
-    NameKammavacacariya: string;
-  };
-  pabajja: {
-    namePenahbisan: string;
-    tempatPenahbisan: string;
-    tanggalPenahbisan: string;
-    nameUpajjhaya: string;
-  };
-  domisili: string;
-}
-
-const sanghaList = sangha as any[];
-
 function getInitials(fullName: string): string {
   const cleaned = fullName.replace(/^Bhikkhu\s+/i, "").trim();
   const words = cleaned.split(/\s+/).filter(Boolean);
@@ -40,18 +19,19 @@ function formatValue(val?: string): string {
 }
 
 export function generateStaticParams() {
-  // Deduplicate slugs in case a slug appears more than once (e.g. bhikkhu-ṭhānuttaro)
-  const uniqueSlugs = Array.from(new Set(sanghaList.map((item) => item.slug)));
-  return uniqueSlugs.map((slug) => ({ slug }));
+  return sangha.map((person) => ({
+    id: String(person.id),
+  }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const person = sanghaList.find((item) => item.slug === slug);
+  const { id } = await params;
+  const numericId = Number(id);
+  const person = sangha.find((item) => item.id === numericId);
 
   if (!person) {
     return { title: "Profil Sangha" };
@@ -70,29 +50,34 @@ export async function generateMetadata({
 export default async function SanghaDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ id: string }>;
 }) {
-  const { slug } = await params;
-  const personIndex = sanghaList.findIndex((item) => item.slug === slug);
+  const { id } = await params;
+  const numericId = Number(id);
 
-  if (personIndex === -1) {
+  if (!Number.isInteger(numericId)) {
     notFound();
   }
 
-  const person = sanghaList[personIndex];
+  const person = sangha.find((item) => item.id === numericId);
+
+  if (!person) {
+    notFound();
+  }
+
   const displayName = person.upasampada.name;
   const initials = getInitials(displayName);
-  const portraitIndex = (personIndex % 12) + 1;
+  const portraitIndex = ((person.id - 1) % 12) + 1;
   const hasDomisili = Boolean(person.domisili && person.domisili.trim() !== "-");
 
   const upasampadaRows = [
     { label: "Nama Penahbisan", value: formatValue(person.upasampada.namePenahbisan) },
     { label: "Tempat Penahbisan", value: formatValue(person.upasampada.tempatPenahbisan) },
     { label: "Tanggal Penahbisan", value: formatValue(person.upasampada.tanggalPenahbisan) },
-    { label: "Nama Upajjhaya", value: formatValue(person.upasampada.NameUpajjhaya) },
+    { label: "Nama Upajjhaya", value: formatValue(person.upasampada.nameUpajjhaya) },
     {
       label: "Nama Kammavacacariya",
-      value: formatValue(person.upasampada.NameKammavacacariya),
+      value: formatValue(person.upasampada.nameKammavacacariya),
     },
   ];
 
@@ -154,7 +139,7 @@ export default async function SanghaDetailPage({
             alignItems: "start",
           }}
         >
-          {/* Left Column: Minimalist Portrait / Monogram & Summary */}
+          {/* Left Column */}
           <aside
             style={{
               display: "flex",
@@ -198,7 +183,7 @@ export default async function SanghaDetailPage({
             </div>
           </aside>
 
-          {/* Right Column: Clean Minimalist Ordination & Domicile Cards */}
+          {/* Right Column */}
           <div
             style={{
               display: "flex",
@@ -231,13 +216,7 @@ export default async function SanghaDetailPage({
                 Penahbisan Bhikkhu (Upasampada)
               </h2>
 
-              <dl
-                style={{
-                  margin: 0,
-                  display: "grid",
-                  gap: "0.75rem",
-                }}
-              >
+              <dl style={{ margin: 0, display: "grid", gap: "0.75rem" }}>
                 {upasampadaRows.map((row) => (
                   <div
                     key={row.label}
@@ -251,13 +230,7 @@ export default async function SanghaDetailPage({
                       flexWrap: "wrap",
                     }}
                   >
-                    <dt
-                      style={{
-                        fontSize: "0.9rem",
-                        opacity: 0.68,
-                        margin: 0,
-                      }}
-                    >
+                    <dt style={{ fontSize: "0.9rem", opacity: 0.68, margin: 0 }}>
                       {row.label}
                     </dt>
                     <dd
@@ -300,13 +273,7 @@ export default async function SanghaDetailPage({
                 Penahbisan Samanera (Pabbajja)
               </h2>
 
-              <dl
-                style={{
-                  margin: 0,
-                  display: "grid",
-                  gap: "0.75rem",
-                }}
-              >
+              <dl style={{ margin: 0, display: "grid", gap: "0.75rem" }}>
                 {pabbajjaRows.map((row) => (
                   <div
                     key={row.label}
@@ -320,13 +287,7 @@ export default async function SanghaDetailPage({
                       flexWrap: "wrap",
                     }}
                   >
-                    <dt
-                      style={{
-                        fontSize: "0.9rem",
-                        opacity: 0.68,
-                        margin: 0,
-                      }}
-                    >
+                    <dt style={{ fontSize: "0.9rem", opacity: 0.68, margin: 0 }}>
                       {row.label}
                     </dt>
                     <dd
