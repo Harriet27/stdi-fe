@@ -2,17 +2,22 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import type { StaticImageData } from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 export interface BhikkhuItem {
+  id: number;
   slug: string;
+  image?: string | StaticImageData;
   upasampada: {
     name: string;
     namePenahbisan: string;
     tempatPenahbisan: string;
     tanggalPenahbisan: string;
-    NameUpajjhaya: string;
-    NameKammavacacariya: string;
+    nameUpajjhaya?: string;
+    nameKammavacacariya?: string;
+    NameUpajjhaya?: string;
+    NameKammavacacariya?: string;
   };
   pabajja: {
     namePenahbisan: string;
@@ -24,19 +29,58 @@ export interface BhikkhuItem {
 }
 
 interface SanghaDirectoryProps {
-  // items: BhikkhuItem[];
-  items: any[]; // Use 'any' type for now to avoid type errors
+  items: any[];
 }
 
 const ITEMS_PER_PAGE = 12;
 
 function getInitials(fullName: string): string {
-  // Strip "Bhikkhu" prefix if present so initials reflect their monastic name
   const cleaned = fullName.replace(/^Bhikkhu\s+/i, "").trim();
   const words = cleaned.split(/\s+/).filter(Boolean);
   if (words.length === 0) return "BK";
   if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
   return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+}
+
+function resolveImageSrc(image?: string | StaticImageData): string | null {
+  if (!image) return null;
+  if (typeof image === "string") {
+    const trimmed = image.trim();
+    return trimmed.length > 0 ? trimmed : null;
+  }
+  return image.src || null;
+}
+
+function PortraitMedia({
+  image,
+  alt,
+  initials,
+}: {
+  image?: string | StaticImageData;
+  alt: string;
+  initials: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  const src = resolveImageSrc(image);
+
+  if (src && !failed) {
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className="portrait-image"
+        referrerPolicy="no-referrer"
+        onError={() => setFailed(true)}
+        style={{
+          display: "block",
+          width: "100%",
+          height: "100%",
+        }}
+      />
+    );
+  }
+
+  return <span>{initials}</span>;
 }
 
 export function SanghaDirectory({ items }: SanghaDirectoryProps) {
@@ -45,7 +89,6 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
   const totalItems = items.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / ITEMS_PER_PAGE));
 
-  // Pure JS slice for current page (max 12 items)
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
@@ -80,7 +123,6 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
 
       <div className="sangha-grid">
         {currentItems.map((person, i) => {
-          // Keeps portrait classes cycling cleanly (1..12) across all pages
           const portraitIndex = (i % ITEMS_PER_PAGE) + 1;
           const displayName = person.upasampada.name;
           const initials = getInitials(displayName);
@@ -89,23 +131,6 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
             person.upasampada.tanggalPenahbisan !== "-"
               ? `Upasampada: ${person.upasampada.tanggalPenahbisan}`
               : "Sangha Theravāda";
-          const displayImage = person.image;
-
-          const showDisplayImage = () => {
-            if (displayImage) {
-              return (
-                <img
-                  src={displayImage}
-                  alt={`Portrait of ${displayName}`}
-                  className="portrait-image"
-                  referrerPolicy="no-referrer"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              );
-            } else {
-              return <span>{initials}</span>;
-            }
-          }
 
           return (
             <Link
@@ -115,8 +140,11 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
             >
               <div className={`monk-portrait portrait-${portraitIndex}`}>
                 <div className="portrait-halo" />
-                {/* <span>{initials}</span> */}
-                {showDisplayImage()}
+                <PortraitMedia
+                  image={person.image}
+                  alt={`Portrait of ${displayName}`}
+                  initials={initials}
+                />
                 <div className="portrait-label">SANGHA · BODHI KARUNA</div>
               </div>
               <div className="monk-info">
