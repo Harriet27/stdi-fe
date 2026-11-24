@@ -89,6 +89,23 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
             person.upasampada.tanggalPenahbisan !== "-"
               ? `Upasampada: ${person.upasampada.tanggalPenahbisan}`
               : "Sangha Theravāda";
+          const displayImage = person.image;
+
+          const showDisplayImage = () => {
+            if (displayImage) {
+              return (
+                <img
+                  src={displayImage}
+                  alt={`Portrait of ${displayName}`}
+                  className="portrait-image"
+                  referrerPolicy="no-referrer"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              );
+            } else {
+              return <span>{initials}</span>;
+            }
+          }
 
           return (
             <Link
@@ -98,7 +115,8 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
             >
               <div className={`monk-portrait portrait-${portraitIndex}`}>
                 <div className="portrait-halo" />
-                <span>{initials}</span>
+                {/* <span>{initials}</span> */}
+                {showDisplayImage()}
                 <div className="portrait-label">SANGHA · BODHI KARUNA</div>
               </div>
               <div className="monk-info">

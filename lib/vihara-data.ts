@@ -1,3 +1,5 @@
+import { sanghaImg } from '@/public/images/sangha';
+
 export const events = [
   {
     slug: 'perayaan-kathina-2026',
@@ -52,7 +54,7 @@ export const events = [
 export const sangha = [
   {
     id: 1,
-    slug: "bhikkhu-wongsin-lābhiko",
+    image: sanghaImg.one,
     upasampada: {
       name: "Bhikkhu Wongsin Lābhiko",
       namePenahbisan: "Wongsin Lābhiko",
@@ -71,7 +73,7 @@ export const sangha = [
   },
   {
     id: 2,
-    slug: "bhikkhu-weerasin-khantiko",
+    image: sanghaImg.two,
     upasampada: {
       name: "Bhikkhu Weerasin Khantiko",
       namePenahbisan: "Weerasin Khantiko",
@@ -90,7 +92,7 @@ export const sangha = [
   },
   {
     id: 3,
-    slug: "bhikkhu-khampun-suvaṇṇadharo",
+    image: sanghaImg.three,
     upasampada: {
       name: "Bhikkhu Khampun Suvaṇṇadharo",
       namePenahbisan: "Khampun Suvaṇṇadharo",
@@ -109,7 +111,7 @@ export const sangha = [
   },
   {
     id: 4,
-    slug: "bhikkhu-kamsai-sumano",
+    image: sanghaImg.four,
     upasampada: {
       name: "Bhikkhu Kamsai Sumano",
       namePenahbisan: "Kamsai Sumano",
@@ -128,7 +130,7 @@ export const sangha = [
   },
   {
     id: 5,
-    slug: "bhikkhu-chatchawan-iddhivijjo",
+    image: sanghaImg.five,
     upasampada: {
       name: "Bhikkhu Chatchawan Iddhivijjo",
       namePenahbisan: "Chatchawan Iddhivijjo",
@@ -147,7 +149,7 @@ export const sangha = [
   },
   {
     id: 6,
-    slug: "bhikkhu-mahā-wirat-khemacārī",
+    image: sanghaImg.six,
     upasampada: {
       name: "Bhikkhu Mahā Wirat Khemacārī",
       namePenahbisan: "Mahā Wirat Khemacārī",
@@ -166,7 +168,7 @@ export const sangha = [
   },
   {
     id: 7,
-    slug: "bhikkhu-subin-ghosito",
+    image: sanghaImg.seven,
     upasampada: {
       name: "Bhikkhu Subin Ghosito",
       namePenahbisan: "Subin Ghosito",
@@ -185,7 +187,7 @@ export const sangha = [
   },
   {
     id: 8,
-    slug: "bhikkhu-thonglek-aggadhammo",
+    image: sanghaImg.eight,
     upasampada: {
       name: "Bhikkhu Thonglek Aggadhammo",
       namePenahbisan: "Thonglek Aggadhammo",
@@ -204,7 +206,7 @@ export const sangha = [
   },
   {
     id: 9,
-    slug: "bhikkhu-prasan-tejadharo",
+    image: sanghaImg.nine,
     upasampada: {
       name: "Bhikkhu Prasan Tejadharo",
       namePenahbisan: "Prasan Tejadharo",
@@ -223,7 +225,7 @@ export const sangha = [
   },
   {
     id: 10,
-    slug: "bhikkhu-nu-hajjatejo",
+    image: sanghaImg.ten,
     upasampada: {
       name: "Bhikkhu Nu Hajjatejo",
       namePenahbisan: "Nu Hajjatejo",
@@ -242,7 +244,7 @@ export const sangha = [
   },
   {
     id: 11,
-    slug: "bhikkhu-suwan-uṭṭhāno",
+    image: sanghaImg.eleven,
     upasampada: {
       name: "Bhikkhu Suwan Uṭṭhāno",
       namePenahbisan: "Suwan Uṭṭhāno",
@@ -261,7 +263,7 @@ export const sangha = [
   },
   {
     id: 12,
-    slug: "bhikkhu-nāthasīlo",
+    image: sanghaImg.twelve,
     upasampada: {
       name: "Bhikkhu Nāthasīlo",
       namePenahbisan: "Nāthasīlo",
@@ -280,7 +282,7 @@ export const sangha = [
   },
   {
     id: 13,
-    slug: "bhikkhu-tawan-aggatejo",
+    image: sanghaImg.thirteen,
     upasampada: {
       name: "Bhikkhu Tawan Aggatejo",
       namePenahbisan: "Tawan Aggatejo",
@@ -299,7 +301,7 @@ export const sangha = [
   },
   {
     id: 14,
-    slug: "bhikkhu-subhācāro",
+    image: sanghaImg.fourteen,
     upasampada: {
       name: "Bhikkhu Subhācāro",
       namePenahbisan: "Subhācāro",
@@ -318,7 +320,7 @@ export const sangha = [
   },
   {
     id: 15,
-    slug: "bhikkhu-ṭhitasaddho",
+    image: sanghaImg.fifteen,
     upasampada: {
       name: "Bhikkhu Ṭhitasaddho",
       namePenahbisan: "Ṭhitasaddho",
@@ -337,7 +339,7 @@ export const sangha = [
   },
   {
     id: 16,
-    slug: "bhikkhu-kosalo",
+    image: sanghaImg.sixteen,
     upasampada: {
       name: "Bhikkhu Kosalo",
       namePenahbisan: "Kosalo",
@@ -356,7 +358,7 @@ export const sangha = [
   },
   {
     id: 17,
-    slug: "bhikkhu-abhipuñño",
+    image: sanghaImg.seventeen,
     upasampada: {
       name: "Bhikkhu Abhipuñño",
       namePenahbisan: "Abhipuñño",
@@ -375,7 +377,7 @@ export const sangha = [
   },
   {
     id: 18,
-    slug: "bhikkhu-kittipañño",
+    image: sanghaImg.eighteen,
     upasampada: {
       name: "Bhikkhu Kittipañño",
       namePenahbisan: "Kittipañño",
@@ -394,7 +396,7 @@ export const sangha = [
   },
   {
     id: 19,
-    slug: "bhikkhu-ṭhānuttaro",
+    image: sanghaImg.nineteen,
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
       namePenahbisan: "Ṭhānuttaro",
@@ -413,7 +415,7 @@ export const sangha = [
   },
   {
     id: 20,
-    slug: "bhikkhu-atijāgaro",
+    image: sanghaImg.twenty,
     upasampada: {
       name: "Bhikkhu Atijāgaro",
       namePenahbisan: "Atijāgaro",
@@ -432,7 +434,7 @@ export const sangha = [
   },
   {
     id: 21,
-    slug: "bhikkhu-atthakovido",
+    image: sanghaImg.twentyOne,
     upasampada: {
       name: "Bhikkhu Atthakovido",
       namePenahbisan: "Atthakovido",
@@ -451,7 +453,7 @@ export const sangha = [
   },
   {
     id: 22,
-    slug: "bhikkhu-dhammāvudho",
+    image: sanghaImg.twentyTwo,
     upasampada: {
       name: "Bhikkhu Dhammāvudho",
       namePenahbisan: "Dhammāvudho",
@@ -470,7 +472,7 @@ export const sangha = [
   },
   {
     id: 23,
-    slug: "bhikkhu-ṭhānuttaro",
+    image: sanghaImg.twentyThree,
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
       namePenahbisan: "Ṭhānuttaro",
@@ -489,7 +491,7 @@ export const sangha = [
   },
   {
     id: 24,
-    slug: "bhikkhu-punnawich",
+    image: sanghaImg.twentyFour,
     upasampada: {
       name: "Bhikkhu Punnawich",
       namePenahbisan: "Punnawich",
@@ -508,7 +510,7 @@ export const sangha = [
   },
   {
     id: 25,
-    slug: "bhikkhu-jhanananda",
+    image: sanghaImg.twentyFive,
     upasampada: {
       name: "Bhikkhu Jhanananda",
       namePenahbisan: "Jhanananda",
@@ -527,7 +529,7 @@ export const sangha = [
   },
   {
     id: 26,
-    slug: "bhikkhu-kalyāṇadhammo",
+    image: sanghaImg.twentySix,
     upasampada: {
       name: "Bhikkhu Kalyāṇadhammo",
       namePenahbisan: "Kalyāṇadhammo",
@@ -546,7 +548,7 @@ export const sangha = [
   },
   {
     id: 27,
-    slug: "bhikkhu-kittichai-sudhammo",
+    image: sanghaImg.twentySeven,
     upasampada: {
       name: "Bhikkhu Kittichai Sudhammo",
       namePenahbisan: "Kittichai Sudhammo",
@@ -565,7 +567,7 @@ export const sangha = [
   },
   {
     id: 28,
-    slug: "bhikkhu-candasīlo",
+    image: sanghaImg.twentyEight,
     upasampada: {
       name: "Bhikkhu Candasīlo",
       namePenahbisan: "Candasīlo",
@@ -584,7 +586,7 @@ export const sangha = [
   },
   {
     id: 29,
-    slug: "bhikkhu-paññāvajiro",
+    image: sanghaImg.twentyNine,
     upasampada: {
       name: "Bhikkhu Paññāvajiro",
       namePenahbisan: "Paññāvajiro",
@@ -603,7 +605,7 @@ export const sangha = [
   },
   {
     id: 30,
-    slug: "bhikkhu-guṇadhammo",
+    image: sanghaImg.thirty,
     upasampada: {
       name: "Bhikkhu Guṇadhammo",
       namePenahbisan: "Guṇadhammo",
@@ -622,7 +624,7 @@ export const sangha = [
   },
   {
     id: 31,
-    slug: "bhikkhu-vaḍḍhano",
+    image: sanghaImg.thirtyOne,
     upasampada: {
       name: "Bhikkhu Vaḍḍhano",
       namePenahbisan: "Vaḍḍhano",
@@ -641,7 +643,7 @@ export const sangha = [
   },
   {
     id: 32,
-    slug: "bhikkhu-abhāgamo",
+    image: sanghaImg.thirtyTwo,
     upasampada: {
       name: "Bhikkhu Abhāgamo",
       namePenahbisan: "Abhāgamo",
@@ -660,7 +662,7 @@ export const sangha = [
   },
   {
     id: 33,
-    slug: "bhikkhu-woraphol-ratindharo",
+    image: sanghaImg.thirtyThree,
     upasampada: {
       name: "Bhikkhu Woraphol Ratindharo",
       namePenahbisan: "Woraphol Ratindharo",
@@ -679,7 +681,7 @@ export const sangha = [
   },
   {
     id: 34,
-    slug: "bhikkhu-vichan-pavaro",
+    image: sanghaImg.thirtyFour,
     upasampada: {
       name: "Bhikkhu Vichan Pavaro",
       namePenahbisan: "Vichan Pavaro",
@@ -698,7 +700,7 @@ export const sangha = [
   },
   {
     id: 35,
-    slug: "bhikkhu-wongsathorn-candavaṁso",
+    image: sanghaImg.thirtyFive,
     upasampada: {
       name: "Bhikkhu Wongsathorn Candavaṁso",
       namePenahbisan: "Wongsathorn Candavaṁso",
@@ -717,7 +719,7 @@ export const sangha = [
   },
   {
     id: 36,
-    slug: "bhikkhu-natthaphong-sudhammo",
+    image: sanghaImg.thirtySix,
     upasampada: {
       name: "Bhikkhu Natthaphong Sudhammo",
       namePenahbisan: "Natthaphong Sudhammo",
@@ -736,7 +738,7 @@ export const sangha = [
   },
   {
     id: 37,
-    slug: "bhikkhu-cittasanto",
+    image: sanghaImg.thirtySeven,
     upasampada: {
       name: "Bhikkhu Cittasanto",
       namePenahbisan: "Cittasanto",
@@ -755,7 +757,7 @@ export const sangha = [
   },
   {
     id: 38,
-    slug: "bhikkhu-ghosako",
+    image: sanghaImg.thirtyEight,
     upasampada: {
       name: "Bhikkhu Ghosako",
       namePenahbisan: "Ghosako",
@@ -774,7 +776,7 @@ export const sangha = [
   },
   {
     id: 39,
-    slug: "bhikkhu-abhirato",
+    image: sanghaImg.thirtyNine,
     upasampada: {
       name: "Bhikkhu Abhirato",
       namePenahbisan: "Abhirato",
@@ -793,7 +795,7 @@ export const sangha = [
   },
   {
     id: 40,
-    slug: "bhikkhu-cittarakkho",
+    image: sanghaImg.forty,
     upasampada: {
       name: "Bhikkhu Cittarakkho",
       namePenahbisan: "Cittarakkho",
@@ -812,7 +814,7 @@ export const sangha = [
   },
   {
     id: 41,
-    slug: "bhikkhu-saccañāṇo",
+    image: sanghaImg.fortyOne,
     upasampada: {
       name: "Bhikkhu Saccañāṇo",
       namePenahbisan: "Saccañāṇo",
@@ -831,7 +833,7 @@ export const sangha = [
   },
   {
     id: 42,
-    slug: "bhikkhu-kusalo",
+    image: sanghaImg.fortyTwo,
     upasampada: {
       name: "Bhikkhu Kusalo",
       namePenahbisan: "Kusalo",
@@ -850,7 +852,7 @@ export const sangha = [
   },
   {
     id: 43,
-    slug: "bhikkhu-chandadhammo",
+    image: sanghaImg.fortyThree,
     upasampada: {
       name: "Bhikkhu Chandadhammo",
       namePenahbisan: "Chandadhammo",
