@@ -42,7 +42,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <Link href="/#kontak" className="header-cta">
-          Kunjungi Vihara <ArrowUpRight size={15} />
+          Hubungi Kami <ArrowUpRight size={15} />
         </Link>
         <details className="mobile-nav">
           <summary aria-label="Buka navigasi">

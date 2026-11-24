@@ -50,7 +50,779 @@ export const events = [
 ]
 
 export const sangha = [
-  { slug: 'bhante-sumedho', name: 'Bhante Sumedho', role: 'Kepala Vihara', initials: 'BS', years: 'Membimbing sejak 2008', bio: 'Menapaki jalan Dhamma dengan ketekunan dan welas asih. Bhante Sumedho membimbing puja bakti, meditasi, dan kegiatan pembinaan umat.' },
-  { slug: 'bhante-ananda', name: 'Bhante Ananda', role: 'Pembina Dhamma', initials: 'BA', years: 'Membimbing sejak 2014', bio: 'Berfokus pada pendidikan Dhamma yang dekat dengan keseharian, khususnya untuk keluarga dan generasi muda.' },
-  { slug: 'bhante-santacitto', name: 'Bhante Santacitto', role: 'Pembimbing Meditasi', initials: 'BS', years: 'Membimbing sejak 2018', bio: 'Mendampingi umat dalam latihan perhatian penuh dan pengembangan ketenangan batin melalui praktik yang sederhana.' },
-]
+  {
+    slug: "bhikkhu-wongsin-lābhiko",
+    upasampada: {
+      name: "Bhikkhu Wongsin Lābhiko",
+      namePenahbisan: "Wongsin Lābhiko",
+      tempatPenahbisan: "Wat Bunyanuson, Udonthani",
+      tanggalPenahbisan: "20 May 1977",
+      nameUpajjhaya: "Phrakhruprasitgananukarn",
+      nameKammavacacariya: "Phrakhrusophongananurak"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Bunyanuson, Udonthani",
+      tanggalPenahbisan: "20 May 1977",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vipassana Graha, Lembang - Bandung"
+  },
+  {
+    slug: "bhikkhu-weerasin-khantiko",
+    upasampada: {
+      name: "Bhikkhu Weerasin Khantiko",
+      namePenahbisan: "Weerasin Khantiko",
+      tempatPenahbisan: "Wat Sirikamalawas - Bangkok",
+      tanggalPenahbisan: "19 May 1991",
+      nameUpajjhaya: "Phrakhrupramotdhammathada",
+      nameKammavacacariya: "Phra Nirot Thitajotiko"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Sirikamalawas - Bangkok",
+      tanggalPenahbisan: "19 May 1991",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  },
+  {
+    slug: "bhikkhu-khampun-suvaṇṇadharo",
+    upasampada: {
+      name: "Bhikkhu Khampun Suvaṇṇadharo",
+      namePenahbisan: "Khampun Suvaṇṇadharo",
+      tempatPenahbisan: "Wat Khao Sukhim, Chanthaburi",
+      tanggalPenahbisan: "17 Jul 1991",
+      nameUpajjhaya: "Phra Srivisuddhinayok",
+      nameKammavacacariya: "Phra Khru Udomdhammakhun"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Khao Sukhim, Chanthaburi",
+      tanggalPenahbisan: "17 Jul 1991",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Cetiya Tiratana Parami - Jakarta Utara"
+  },
+  {
+    slug: "bhikkhu-kamsai-sumano",
+    upasampada: {
+      name: "Bhikkhu Kamsai Sumano",
+      namePenahbisan: "Kamsai Sumano",
+      tempatPenahbisan: "Watpa Kammawasri Sawang Daendin, Sakon Nakhon",
+      tanggalPenahbisan: "28 Apr 1992",
+      nameUpajjhaya: "Phrakhru Pisanpannakhun",
+      nameKammavacacariya: "Phraathikanrak Kittiwanno"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Watpa Samakkiibampenphon Sawang Daendin, Sakon Nakhon",
+      tanggalPenahbisan: "07 May 1984",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
+  },
+  {
+    slug: "bhikkhu-chatchawan-iddhivijjo",
+    upasampada: {
+      name: "Bhikkhu Chatchawan Iddhivijjo",
+      namePenahbisan: "Chatchawan Iddhivijjo",
+      tempatPenahbisan: "Wat Pa Saeng Arun",
+      tanggalPenahbisan: "15 Nov 1992",
+      nameUpajjhaya: "Phra Ratchaworanuwat",
+      nameKammavacacariya: "Phrakhru Sriwatthanathorn"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Pa Saeng Arun",
+      tanggalPenahbisan: "15 Nov 1992",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Dhamma Metta Arama - Pekanbaru"
+  },
+  {
+    slug: "bhikkhu-mahā-wirat-khemacārī",
+    upasampada: {
+      name: "Bhikkhu Mahā Wirat Khemacārī",
+      namePenahbisan: "Mahā Wirat Khemacārī",
+      tempatPenahbisan: "Wat Bodhisomphon, Udonthani",
+      tanggalPenahbisan: "07 Apr 1994",
+      nameUpajjhaya: "Phra Dhammabandit",
+      nameKammavacacariya: "Phra Khru Sirisarasudhi"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Traymit, Kalasin",
+      tanggalPenahbisan: "01 Apr 1987",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Bangka Dhammaram - Bangka"
+  },
+  {
+    slug: "bhikkhu-subin-ghosito",
+    upasampada: {
+      name: "Bhikkhu Subin Ghosito",
+      namePenahbisan: "Subin Ghosito",
+      tempatPenahbisan: "Wat Ratanawanaram - Phayao",
+      tanggalPenahbisan: "25 Dec 1995",
+      nameUpajjhaya: "Phra Khru Bodhivisalathen",
+      nameKammavacacariya: "Phra Manit Candadhammo"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Ratanawanaram, Phayao",
+      tanggalPenahbisan: "25 Dec 1995",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Cetiya Maha Virya Arama - Bogor"
+  },
+  {
+    slug: "bhikkhu-thonglek-aggadhammo",
+    upasampada: {
+      name: "Bhikkhu Thonglek Aggadhammo",
+      namePenahbisan: "Thonglek Aggadhammo",
+      tempatPenahbisan: "Watpa Dhammarangsri Senangkanikom, Amnatcharoen",
+      tanggalPenahbisan: "16 Jul 2000",
+      nameUpajjhaya: "Phrakhru Sathiddhammakhun",
+      nameKammavacacariya: "Phrakhru Sirithitinan"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Watpa Dhammarangsri Senangkanikom, Amnatcharoen",
+      tanggalPenahbisan: "16 Jul 2000",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
+  },
+  {
+    slug: "bhikkhu-prasan-tejadharo",
+    upasampada: {
+      name: "Bhikkhu Prasan Tejadharo",
+      namePenahbisan: "Prasan Tejadharo",
+      tempatPenahbisan: "Watpa Sriudomrattanaram Nonsa-at, Udon Thani",
+      tanggalPenahbisan: "16 Jul 2002",
+      nameUpajjhaya: "Phrakhru Samanakitjathon",
+      nameKammavacacariya: "Phrakhru Suvimolsrilajar"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Watpa Sriudomrattanaram Nonsa-at, Udon Thani",
+      tanggalPenahbisan: "16 Jul 2002",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Cetiya Buddha Jaya Mangala - Kota Tangerang"
+  },
+  {
+    slug: "bhikkhu-nu-hajjatejo",
+    upasampada: {
+      name: "Bhikkhu Nu Hajjatejo",
+      namePenahbisan: "Nu Hajjatejo",
+      tempatPenahbisan: "Wat Khao Sukhim, Chanthaburi",
+      tanggalPenahbisan: "24 Jul 2004",
+      nameUpajjhaya: "Phrathep Sarasuthi",
+      nameKammavacacariya: "Phra Nyanavilat"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Khao Sukhim, Chanthaburi",
+      tanggalPenahbisan: "23 Mar 2001",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Buddha Dhamma Thitaviriyo - Jakarta Utara"
+  },
+  {
+    slug: "bhikkhu-suwan-uṭṭhāno",
+    upasampada: {
+      name: "Bhikkhu Suwan Uṭṭhāno",
+      namePenahbisan: "Suwan Uṭṭhāno",
+      tempatPenahbisan: "Wat Sirikamalawas, Bangkok",
+      tanggalPenahbisan: "05 Mar 2005",
+      nameUpajjhaya: "Phrakhru Paphatsarathikhun",
+      nameKammavacacariya: "Phrakhru Chotiyanprayut"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Sirikamalawas, Bangkok",
+      tanggalPenahbisan: "05 Mar 2005",
+      nameUpajjhaya: "-"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-nāthasīlo",
+    upasampada: {
+      name: "Bhikkhu Nāthasīlo",
+      namePenahbisan: "Nāthasīlo",
+      tempatPenahbisan: "Wat Thung Pho, Buriram",
+      tanggalPenahbisan: "26 Nov 2006",
+      nameUpajjhaya: "Phra Prasadsarakhun",
+      nameKammavacacariya: "Phra Bundham Anavilo"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thungpho, Buriram",
+      tanggalPenahbisan: "26 Nov 2006",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Nekkhamma Forest Meditation Centre - Sodong"
+  },
+  {
+    slug: "bhikkhu-tawan-aggatejo",
+    upasampada: {
+      name: "Bhikkhu Tawan Aggatejo",
+      namePenahbisan: "Tawan Aggatejo",
+      tempatPenahbisan: "Wat Srichan - Mueang Khon Kaen",
+      tanggalPenahbisan: "09 Jun 2007",
+      nameUpajjhaya: "Phra Rajawaranuwat",
+      nameKammavacacariya: "Phra Mahasuphon Jataviro"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Sriphadung Pattana Bandung, Udon Thani",
+      tanggalPenahbisan: "10 Apr 1999",
+      nameUpajjhaya: "Phra Khru Visitthammakhun"
+    },
+    domisili: "Pondok Meditasi Asri Jakasampurna - Bekasi"
+  },
+  {
+    slug: "bhikkhu-subhācāro",
+    upasampada: {
+      name: "Bhikkhu Subhācāro",
+      namePenahbisan: "Subhācāro",
+      tempatPenahbisan: "Wat Sommanat, Thailand",
+      tanggalPenahbisan: "30 Mar 2008",
+      nameUpajjhaya: "-",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Pusat Meditasi Vipassana Graha",
+      tanggalPenahbisan: "08 Jul 2006",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Wisma Bhikkhu Jaya Wijaya - Temanggung"
+  },
+  {
+    slug: "bhikkhu-ṭhitasaddho",
+    upasampada: {
+      name: "Bhikkhu Ṭhitasaddho",
+      namePenahbisan: "Ṭhitasaddho",
+      tempatPenahbisan: "Wat Somanats",
+      tanggalPenahbisan: "30 Mar 2008",
+      nameUpajjhaya: "Phra Thitavanno",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha",
+      tanggalPenahbisan: "-",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Buddhist Meditation Centre - Medan"
+  },
+  {
+    slug: "bhikkhu-kosalo",
+    upasampada: {
+      name: "Bhikkhu Kosalo",
+      namePenahbisan: "Kosalo",
+      tempatPenahbisan: "Wat Srikamalawat - Bangkok, Thailand",
+      tanggalPenahbisan: "24 Jul 2010",
+      nameUpajjhaya: "Phra Khru Jotinyanaprayut",
+      nameKammavacacariya: "Phra On Si Dhammajoto"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Sri Kamalawat - Bangkok, Thailand",
+      tanggalPenahbisan: "24 Jul 2010",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Nekkhamma Forest Meditation Centre - Sodong,"
+  },
+  {
+    slug: "bhikkhu-abhipuñño",
+    upasampada: {
+      name: "Bhikkhu Abhipuñño",
+      namePenahbisan: "Abhipuñño",
+      tempatPenahbisan: "Wat Ratanawanaram, Phayao",
+      tanggalPenahbisan: "27 Jan 2013",
+      nameUpajjhaya: "Phra Paññāphisalathen",
+      nameKammavacacariya: "Phra Khamrun Tejabalo"
+    },
+    pabajja: {
+      namePenahbisan: "Sāmaṇera Hendri",
+      tempatPenahbisan: "Wat Thungpho, Buriram",
+      tanggalPenahbisan: "08 Mar 2012",
+      nameUpajjhaya: "Phra Prasatsarakhun"
+    },
+    domisili: "Vihāra Siddharta - Tangerang Selatan"
+  },
+  {
+    slug: "bhikkhu-kittipañño",
+    upasampada: {
+      name: "Bhikkhu Kittipañño",
+      namePenahbisan: "Kittipañño",
+      tempatPenahbisan: "Wat Ratanawanaram, Phayao",
+      tanggalPenahbisan: "27 Jan 2013",
+      nameUpajjhaya: "Phra Paññāphisalathen",
+      nameKammavacacariya: "Phra Khamrun Tejabalo"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Ratanawanaram, Phayao",
+      tanggalPenahbisan: "17 Nov 2012",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Cycloop Dhamma Jaya - Sentani, Papua"
+  },
+  {
+    slug: "bhikkhu-ṭhānuttaro",
+    upasampada: {
+      name: "Bhikkhu Ṭhānuttaro",
+      namePenahbisan: "Ṭhānuttaro",
+      tempatPenahbisan: "Vihara Vipassana Graha, Lembang",
+      tanggalPenahbisan: "11 May 2013",
+      nameUpajjhaya: "Chaukun Phra Visutachan",
+      nameKammavacacariya: "Chaukun"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha, Lembang",
+      tanggalPenahbisan: "05 May 2012",
+      nameUpajjhaya: "-"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-atijāgaro",
+    upasampada: {
+      name: "Bhikkhu Atijāgaro",
+      namePenahbisan: "Atijāgaro",
+      tempatPenahbisan: "Wat Thepsirin Tharawat - Bangkok",
+      tanggalPenahbisan: "27 Jun 2013",
+      nameUpajjhaya: "Phra Dhammawaraphon",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thepsirin Tharawat",
+      tanggalPenahbisan: "27 Jun 2013",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Pusdiklat Sadar Indonesia - Serpong Utara"
+  },
+  {
+    slug: "bhikkhu-atthakovido",
+    upasampada: {
+      name: "Bhikkhu Atthakovido",
+      namePenahbisan: "Atthakovido",
+      tempatPenahbisan: "-",
+      tanggalPenahbisan: "29 Jun 2013",
+      nameUpajjhaya: "-",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "-",
+      tanggalPenahbisan: "-",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Santi Sukha Arama - Bogor"
+  },
+  {
+    slug: "bhikkhu-dhammāvudho",
+    upasampada: {
+      name: "Bhikkhu Dhammāvudho",
+      namePenahbisan: "Dhammāvudho",
+      tempatPenahbisan: "Wat Thepsirin Bangkok",
+      tanggalPenahbisan: "29 Jun 2013",
+      nameUpajjhaya: "Chaukun Phra Visutachan",
+      nameKammavacacariya: "Chaukun"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thepsirin Bangkok",
+      tanggalPenahbisan: "28 Jun 2013",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Cetiya Panna Sikkha - Jakarta Barat"
+  },
+  {
+    slug: "bhikkhu-ṭhānuttaro",
+    upasampada: {
+      name: "Bhikkhu Ṭhānuttaro",
+      namePenahbisan: "Ṭhānuttaro",
+      tempatPenahbisan: "Wat Thepsirin Bangkok",
+      tanggalPenahbisan: "29 Jun 2013",
+      nameUpajjhaya: "Chaukun Phra Visutachan",
+      nameKammavacacariya: "Chaukun"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thepsirin Bangkok",
+      tanggalPenahbisan: "28 Jun 2013",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Pusdiklat Buddha Belitung - Belitung"
+  },
+  {
+    slug: "bhikkhu-punnawich",
+    upasampada: {
+      name: "Bhikkhu Punnawich",
+      namePenahbisan: "Punnawich",
+      tempatPenahbisan: "Wat Pa Sivilai - Nakhon Phanom",
+      tanggalPenahbisan: "13 Jul 2013",
+      nameUpajjhaya: "Phra Khru Banharadhammakowit",
+      nameKammavacacariya: "Phra Khru Prathipdhammanusat"
+    },
+    pabajja: {
+      namePenahbisan: "Sāmaṇera Punnawich",
+      tempatPenahbisan: "Wat Pa Sivilai - Nakhon Phanom",
+      tanggalPenahbisan: "13 Jul 2013",
+      nameUpajjhaya: "Phra Khru Banharadhammakowit"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  },
+  {
+    slug: "bhikkhu-jhanananda",
+    upasampada: {
+      name: "Bhikkhu Jhanananda",
+      namePenahbisan: "Jhanananda",
+      tempatPenahbisan: "Nirodharama Meditation Centre - Ayer Tawar, Malaysia",
+      tanggalPenahbisan: "18 Aug 2013",
+      nameUpajjhaya: "Sayadaw U Nandasiddhi",
+      nameKammavacacariya: "Sayadaw U Pannabhinanda"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "-",
+      tanggalPenahbisan: "-",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Nekkhamma Forest Meditation Centre - Sodong"
+  },
+  {
+    slug: "bhikkhu-kalyāṇadhammo",
+    upasampada: {
+      name: "Bhikkhu Kalyāṇadhammo",
+      namePenahbisan: "Kalyāṇadhammo",
+      tempatPenahbisan: "Wat Thung Pho, Buriram, Thailand",
+      tanggalPenahbisan: "14 Feb 2014",
+      nameUpajjhaya: "Phra Prasadsarakhun",
+      nameKammavacacariya: "Phra Sunathdhammavicit"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thung Pho, Buriram, Thailand",
+      tanggalPenahbisan: "14 Feb 2014",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  },
+  {
+    slug: "bhikkhu-kittichai-sudhammo",
+    upasampada: {
+      name: "Bhikkhu Kittichai Sudhammo",
+      namePenahbisan: "Kittichai Sudhammo",
+      tempatPenahbisan: "Wat Sri Mongkon Neua",
+      tanggalPenahbisan: "29 Apr 2014",
+      nameUpajjhaya: "Phra Khru Candaravisuddhi",
+      nameKammavacacariya: "Phra Khru Pannakhunathan"
+    },
+    pabajja: {
+      namePenahbisan: "Kittichai",
+      tempatPenahbisan: "Wat Sri Mongkon Neua",
+      tanggalPenahbisan: "29 Apr 2014",
+      nameUpajjhaya: "Phra Khru Candaravisuddhi"
+    },
+    domisili: "Vihara Attha Naga Vimutti"
+  },
+  {
+    slug: "bhikkhu-candasīlo",
+    upasampada: {
+      name: "Bhikkhu Candasīlo",
+      namePenahbisan: "Candasīlo",
+      tempatPenahbisan: "Wat Thep Sirin Bangkok, Thailand",
+      tanggalPenahbisan: "02 May 2014",
+      nameUpajjhaya: "Bhikkhu Varajayo",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha",
+      tanggalPenahbisan: "11 May 2013",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Buddha Jayanti - Bekasi"
+  },
+  {
+    slug: "bhikkhu-paññāvajiro",
+    upasampada: {
+      name: "Bhikkhu Paññāvajiro",
+      namePenahbisan: "Paññāvajiro",
+      tempatPenahbisan: "Wat Thepsirin - Bangkok",
+      tanggalPenahbisan: "02 May 2014",
+      nameUpajjhaya: "Phra Dhammatraylokacan",
+      nameKammavacacariya: "Phra Kittivimolmethi"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Thepsirin Bangkok",
+      tanggalPenahbisan: "02 May 2014",
+      nameUpajjhaya: "-"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-guṇadhammo",
+    upasampada: {
+      name: "Bhikkhu Guṇadhammo",
+      namePenahbisan: "Guṇadhammo",
+      tempatPenahbisan: "Wat Aranyavasi - Nong Khai",
+      tanggalPenahbisan: "01 Jun 2015",
+      nameUpajjhaya: "Phra Kittisarasophon",
+      nameKammavacacariya: "Phra Maha Uthay Nagaseno"
+    },
+    pabajja: {
+      namePenahbisan: "Sāmaṇera Piter",
+      tempatPenahbisan: "Wat Aranyavasi - Nong Khai",
+      tanggalPenahbisan: "01 Jun 2015",
+      nameUpajjhaya: "Phra Kittisarasophon"
+    },
+    domisili: "Vihara Hutan Bhuridatta - Bangka"
+  },
+  {
+    slug: "bhikkhu-vaḍḍhano",
+    upasampada: {
+      name: "Bhikkhu Vaḍḍhano",
+      namePenahbisan: "Vaḍḍhano",
+      tempatPenahbisan: "Watpa Thep Nimit",
+      tanggalPenahbisan: "16 Apr 2016",
+      nameUpajjhaya: "Luangpho Bunpien Sucarino",
+      nameKammavacacariya: "Achan Lee"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha - Lembang, Bandung",
+      tanggalPenahbisan: "26 Dec 2014",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Nekkhamma Forest Meditation Centre - Sodong"
+  },
+  {
+    slug: "bhikkhu-abhāgamo",
+    upasampada: {
+      name: "Bhikkhu Abhāgamo",
+      namePenahbisan: "Abhāgamo",
+      tempatPenahbisan: "Vihara Vipassana Graha, Lembang",
+      tanggalPenahbisan: "02 May 2016",
+      nameUpajjhaya: "Luangpho Ben Kittisaro Mahathera",
+      nameKammavacacariya: "Phra Maha Keattikun Bhaddako Mahathera"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Buddha Metta Arama",
+      tanggalPenahbisan: "05 May 2015",
+      nameUpajjhaya: "-"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-woraphol-ratindharo",
+    upasampada: {
+      name: "Bhikkhu Woraphol Ratindharo",
+      namePenahbisan: "Woraphol Ratindharo",
+      tempatPenahbisan: "Wat Asokaram, Samut Prakan",
+      tanggalPenahbisan: "03 Dec 2016",
+      nameUpajjhaya: "-",
+      nameKammavacacariya: "-"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Asokaram, Samut Prakan",
+      tanggalPenahbisan: "04 Dec 2016",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Cetiya Mahakusala Poris - Kota Tangerang"
+  },
+  {
+    slug: "bhikkhu-vichan-pavaro",
+    upasampada: {
+      name: "Bhikkhu Vichan Pavaro",
+      namePenahbisan: "Vichan Pavaro",
+      tempatPenahbisan: "Wat Rakhangthong, Amnatcharoen",
+      tanggalPenahbisan: "26 Dec 2016",
+      nameUpajjhaya: "Phra Khru Pannaphatthanakorn",
+      nameKammavacacariya: "Phra Suwit Suviro"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Rakhangthong, Amnat Charoen",
+      tanggalPenahbisan: "26 Dec 2016",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Buddha Metta Arama - Jakarta Pusat"
+  },
+  {
+    slug: "bhikkhu-wongsathorn-candavaṁso",
+    upasampada: {
+      name: "Bhikkhu Wongsathorn Candavaṁso",
+      namePenahbisan: "Wongsathorn Candavaṁso",
+      tempatPenahbisan: "Wat Khao Sukhim, Canthaburi",
+      tanggalPenahbisan: "10 Feb 2017",
+      nameUpajjhaya: "Phra Khru Visalasasanakit",
+      nameKammavacacariya: "Phra Khru Kantaratanaphon"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Khaocanthathitaviriyacan, Canthaburi",
+      tanggalPenahbisan: "01 Feb 2017",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Samakkhidham - Jakarta Barat"
+  },
+  {
+    slug: "bhikkhu-natthaphong-sudhammo",
+    upasampada: {
+      name: "Bhikkhu Natthaphong Sudhammo",
+      namePenahbisan: "Natthaphong Sudhammo",
+      tempatPenahbisan: "Vihara Yothapasit",
+      tanggalPenahbisan: "09 May 2017",
+      nameUpajjhaya: "Prakhu Sopon Dhamrangsri",
+      nameKammavacacariya: "Praku Sunthon Saradham"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Yothapasit",
+      tanggalPenahbisan: "09 May 2016",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vimuttara - Jambi"
+  },
+  {
+    slug: "bhikkhu-cittasanto",
+    upasampada: {
+      name: "Bhikkhu Cittasanto",
+      namePenahbisan: "Cittasanto",
+      tempatPenahbisan: "Wat Sirindhon Thepratanaram, Thailand",
+      tanggalPenahbisan: "09 Feb 2018",
+      nameUpajjhaya: "Phra Sudhammathibodi (Bean Kittisaro)",
+      nameKammavacacariya: "Phrakhru Palad Worawat (Ajarn Prasit)"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha",
+      tanggalPenahbisan: "02 May 2016",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  },
+  {
+    slug: "bhikkhu-ghosako",
+    upasampada: {
+      name: "Bhikkhu Ghosako",
+      namePenahbisan: "Ghosako",
+      tempatPenahbisan: "Wat Arannavivek Chiang Mai, Thailand",
+      tanggalPenahbisan: "13 Apr 2018",
+      nameUpajjhaya: "Phra Khru Dhammavivathanakhun",
+      nameKammavacacariya: "Phra Saravut Satisampanno"
+    },
+    pabajja: {
+      namePenahbisan: "Sāmaṇera Cahyo",
+      tempatPenahbisan: "Wat Aranyavivek, Chiangmai, Thailand",
+      tanggalPenahbisan: "13 Apr 2018",
+      nameUpajjhaya: "Phra Khru Dhammavivathanakhun"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-abhirato",
+    upasampada: {
+      name: "Bhikkhu Abhirato",
+      namePenahbisan: "Abhirato",
+      tempatPenahbisan: "Wat Palelai Buddhist Temple, Singapore",
+      tanggalPenahbisan: "27 Jul 2018",
+      nameUpajjhaya: "Phra Vinaidhammavithet",
+      nameKammavacacariya: "Phra Khru Vinayathon Yeow Wei Ong"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Palelai Buddhist Temple, Singapore",
+      tanggalPenahbisan: "27 Jul 2018",
+      nameUpajjhaya: "Phra Vinaidhammavithet"
+    },
+    domisili: "Vihara Siddharta - Tangerang Selatan"
+  },
+  {
+    slug: "bhikkhu-cittarakkho",
+    upasampada: {
+      name: "Bhikkhu Cittarakkho",
+      namePenahbisan: "Cittarakkho",
+      tempatPenahbisan: "Wat Kud Ruea Kham, Sakon Nakhon, Thailand",
+      tanggalPenahbisan: "08 Jun 2019",
+      nameUpajjhaya: "Chaokun Phra Nyanasiddhachan",
+      nameKammavacacariya: "Phra Khru Samupracak"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha",
+      tanggalPenahbisan: "05 Apr 2017",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  },
+  {
+    slug: "bhikkhu-saccañāṇo",
+    upasampada: {
+      name: "Bhikkhu Saccañāṇo",
+      namePenahbisan: "Saccañāṇo",
+      tempatPenahbisan: "Wat Kud Ruea Kham, Sakon Nakhon, Thailand",
+      tanggalPenahbisan: "08 Jun 2019",
+      nameUpajjhaya: "Chaokun Phra Nyanasiddhachan",
+      nameKammavacacariya: "Phra Khru Samupracak"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Vihara Vipassana Graha",
+      tanggalPenahbisan: "15 Apr 2017",
+      nameUpajjhaya: "-"
+    },
+    domisili: "Vihara Indonesia Bodhgaya - Gaya, India"
+  },
+  {
+    slug: "bhikkhu-kusalo",
+    upasampada: {
+      name: "Bhikkhu Kusalo",
+      namePenahbisan: "Kusalo",
+      tempatPenahbisan: "WAT THAM KLONG PHEN - NONG BUA LAMPHU",
+      tanggalPenahbisan: "20 Mar 2023",
+      nameUpajjhaya: "PHRA KHRU KO SON WANANURAK",
+      nameKammavacacariya: "PHRA BUN THAN SIRIPUNNO"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "BUDDHA METTA ARAMA",
+      tanggalPenahbisan: "13 Mar 2022",
+      nameUpajjhaya: "-"
+    },
+    domisili: "-"
+  },
+  {
+    slug: "bhikkhu-chandadhammo",
+    upasampada: {
+      name: "Bhikkhu Chandadhammo",
+      namePenahbisan: "Chandadhammo",
+      tempatPenahbisan: "Wat Aranyavasi - Nong Khai",
+      tanggalPenahbisan: "04 Apr 2025",
+      nameUpajjhaya: "Phra Kittisarasophon",
+      nameKammavacacariya: "Phra Khru Sathivarayan"
+    },
+    pabajja: {
+      namePenahbisan: "-",
+      tempatPenahbisan: "Wat Aranyavasi - Nong Khai",
+      tanggalPenahbisan: "04 Apr 2025",
+      nameUpajjhaya: "Phra Kittisarasophon"
+    },
+    domisili: "Vihara Vipassana Graha - Lembang, Bandung"
+  }
+];
+

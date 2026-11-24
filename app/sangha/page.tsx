@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Sangha & Pembimbing",
   description: "Kenali para pembimbing Dhamma Vihara Bodhi Karuna.",
 };
+
 export default function SanghaIndexPage() {
   return (
     <main className="subpage">
