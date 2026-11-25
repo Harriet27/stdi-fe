@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, MapPin, Sparkles } from "lucide-react";
 import { sangha } from "@/lib/vihara-data";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { PortraitMedia } from "@/components/portrait-media";
 
 function getInitials(fullName: string): string {
   const cleaned = fullName.replace(/^Bhikkhu\s+/i, "").trim();
@@ -69,6 +70,7 @@ export default async function SanghaDetailPage({
   const initials = getInitials(displayName);
   const portraitIndex = ((person.id - 1) % 12) + 1;
   const hasDomisili = Boolean(person.domisili && person.domisili.trim() !== "-");
+  const displayImage = person.image ? person.image : null;
 
   const upasampadaRows = [
     { label: "Nama Penahbisan", value: formatValue(person.upasampada.namePenahbisan) },
@@ -156,11 +158,16 @@ export default async function SanghaDetailPage({
                 overflow: "hidden",
               }}
             >
-              <div className="portrait-halo" />
-              <span style={{ fontSize: "2.25rem", fontWeight: 600 }}>
+              {/* <div className="portrait-halo" /> */}
+                <PortraitMedia
+                  image={person.image}
+                  alt={`Portrait of ${displayName}`}
+                  initials={initials}
+                />
+              {/* <span style={{ fontSize: "2.25rem", fontWeight: 600 }}>
                 {initials}
               </span>
-              <div className="portrait-label">SANGHA · BODHI KARUNA</div>
+              <div className="portrait-label">SANGHA · BODHI KARUNA</div> */}
             </div>
 
             <div

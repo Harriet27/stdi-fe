@@ -73,8 +73,11 @@ function PortraitMedia({
         onError={() => setFailed(true)}
         style={{
           display: "block",
-          width: "100%",
-          height: "100%",
+          // width: "100%",
+          // height: "100%",
+          width: "auto",
+          height: "270px",
+          borderRadius: "25px",
         }}
       />
     );
@@ -139,13 +142,13 @@ export function SanghaDirectory({ items }: SanghaDirectoryProps) {
               key={person.id}
             >
               <div className={`monk-portrait portrait-${portraitIndex}`}>
-                <div className="portrait-halo" />
+                {/* <div className="portrait-halo" /> */}
                 <PortraitMedia
                   image={person.image}
                   alt={`Portrait of ${displayName}`}
                   initials={initials}
                 />
-                <div className="portrait-label">SANGHA · BODHI KARUNA</div>
+                {/* <div className="portrait-label">SANGHA · BODHI KARUNA</div> */}
               </div>
               <div className="monk-info">
                 <span>

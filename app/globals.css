@@ -558,6 +558,7 @@ a {
   place-items: center;
   background: #d9ddce;
   color: #71816d;
+  border-radius: 25px;
 }
 .portrait-2 {
   background: #e5dccc;
