@@ -1,12 +1,103 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { ArrowRight, ArrowUpRight, CalendarDays, MapPin } from 'lucide-react'
-import type { Metadata } from 'next'
-import { events } from '@/lib/vihara-data'
-import { EventCalendar } from '@/components/event-calendar'
-import { SiteFooter, SiteHeader } from '@/components/site-chrome'
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
+import type { Metadata } from "next";
+import { events } from "@/lib/vihara-data";
+import { EventCalendar } from "@/components/event-calendar";
+import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
-export const metadata: Metadata = { title: 'Agenda & Kegiatan', description: 'Kalender puja bakti, meditasi, pendidikan Dhamma, dan kegiatan pelayanan Vihara Bodhi Karuna.' }
+export const metadata: Metadata = {
+  title: "Agenda & Kegiatan",
+  description:
+    "Kalender puja bakti, meditasi, pendidikan Dhamma, dan kegiatan pelayanan Vihara Bodhi Karuna.",
+};
 export default function AgendaPage() {
-  return <main className="subpage"><SiteHeader /><section className="subpage-hero wrap"><div className="section-index">RUANG UNTUK BERKUMPUL <span>/</span> AGENDA</div><h1>Waktu untuk hadir,<br /><em>belajar, dan berbagi.</em></h1><p>Temukan kegiatan yang sesuai untuk Anda. Setiap pertemuan terbuka bagi umat, keluarga, dan siapa pun yang ingin mengenal Dhamma.</p></section><section className="agenda-layout wrap"><div className="agenda-calendar"><EventCalendar events={events} /></div><aside className="agenda-aside"><div className="section-index">DALAM KALENDER</div><h2>Agenda<br /><em>terdekat.</em></h2><p className="aside-copy">Pilih acara untuk membaca informasi lengkap dan detail kehadiran.</p><div className="agenda-aside-note"><CalendarDays size={17} /><span>Kegiatan berlangsung di Vihara Bodhi Karuna</span></div></aside></section><section className="agenda-list-section"><div className="wrap"><div className="section-heading"><div><div className="section-index">JADWAL KEGIATAN <span>/</span> 2026</div><h2>Semua <em>pertemuan.</em></h2></div></div><div className="agenda-list">{events.map((event, index) => <Link href={`/agenda/${event.slug}`} className="agenda-row" key={event.slug}><div className="agenda-row-image"><Image src={event.image} alt="" fill sizes="180px" /></div><div className="agenda-row-date"><span>{event.date.slice(-2)}</span><small>{event.dateLabel.split(' ')[1].slice(0, 3).toUpperCase()}</small></div><div className="agenda-row-copy"><span>{event.category} · {event.dateLabel}</span><h3>{event.title}</h3><p>{event.excerpt}</p><small><MapPin size={12} /> {event.location}</small></div><span className="agenda-row-action">Baca detail <ArrowRight size={15} /></span><span className="agenda-row-number">0{index + 1}</span><ArrowUpRight className="agenda-row-mobile-arrow" size={17} /></Link>)}</div></div></section><SiteFooter /></main>
+  return (
+    <main className="subpage">
+      <SiteHeader />
+      <section className="subpage-hero wrap">
+        <div className="section-index">
+          RUANG UNTUK BERKUMPUL <span>/</span> AGENDA
+        </div>
+        <h1>
+          Waktu untuk hadir,
+          <br />
+          <em>belajar, dan berbagi.</em>
+        </h1>
+        <p>
+          Temukan kegiatan yang sesuai untuk Anda. Setiap pertemuan terbuka bagi
+          umat, keluarga, dan siapa pun yang ingin mengenal Dhamma.
+        </p>
+      </section>
+      <section className="agenda-layout wrap">
+        <div className="agenda-calendar">
+          <EventCalendar events={events} />
+        </div>
+        <aside className="agenda-aside">
+          <div className="section-index">DALAM KALENDER</div>
+          <h2>
+            Agenda
+            <br />
+            <em>terdekat.</em>
+          </h2>
+          <p className="aside-copy">
+            Pilih acara untuk membaca informasi lengkap dan detail kehadiran.
+          </p>
+          <div className="agenda-aside-note">
+            <CalendarDays size={17} />
+            <span>Kegiatan berlangsung di Cetiya Panna Sikkha</span>
+          </div>
+        </aside>
+      </section>
+      <section className="agenda-list-section">
+        <div className="wrap">
+          <div className="section-heading">
+            <div>
+              <div className="section-index">
+                JADWAL KEGIATAN <span>/</span> 2026
+              </div>
+              <h2>
+                Semua <em>pertemuan.</em>
+              </h2>
+            </div>
+          </div>
+          <div className="agenda-list">
+            {events.map((event, index) => (
+              <Link
+                href={`/agenda/${event.slug}`}
+                className="agenda-row"
+                key={event.slug}
+              >
+                <div className="agenda-row-image">
+                  <Image src={event.image} alt="" fill sizes="180px" />
+                </div>
+                <div className="agenda-row-date">
+                  <span>{event.date.slice(-2)}</span>
+                  <small>
+                    {event.dateLabel.split(" ")[1].slice(0, 3).toUpperCase()}
+                  </small>
+                </div>
+                <div className="agenda-row-copy">
+                  <span>
+                    {event.category} · {event.dateLabel}
+                  </span>
+                  <h3>{event.title}</h3>
+                  <p>{event.excerpt}</p>
+                  <small>
+                    <MapPin size={12} /> {event.location}
+                  </small>
+                </div>
+                <span className="agenda-row-action">
+                  Baca detail <ArrowRight size={15} />
+                </span>
+                <span className="agenda-row-number">0{index + 1}</span>
+                <ArrowUpRight className="agenda-row-mobile-arrow" size={17} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <SiteFooter />
+    </main>
+  );
 }
