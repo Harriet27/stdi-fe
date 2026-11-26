@@ -55,6 +55,7 @@ export const sangha = [
   {
     id: 1,
     image: sanghaImg.one,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Wongsin Lābhiko",
       namePenahbisan: "Wongsin Lābhiko",
@@ -74,6 +75,7 @@ export const sangha = [
   {
     id: 2,
     image: sanghaImg.two,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Weerasin Khantiko",
       namePenahbisan: "Weerasin Khantiko",
@@ -93,6 +95,7 @@ export const sangha = [
   {
     id: 3,
     image: sanghaImg.three,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Khampun Suvaṇṇadharo",
       namePenahbisan: "Khampun Suvaṇṇadharo",
@@ -112,6 +115,7 @@ export const sangha = [
   {
     id: 4,
     image: sanghaImg.four,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Kamsai Sumano",
       namePenahbisan: "Kamsai Sumano",
@@ -131,6 +135,7 @@ export const sangha = [
   {
     id: 5,
     image: sanghaImg.five,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Chatchawan Iddhivijjo",
       namePenahbisan: "Chatchawan Iddhivijjo",
@@ -150,6 +155,7 @@ export const sangha = [
   {
     id: 6,
     image: sanghaImg.six,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Mahā Wirat Khemacārī",
       namePenahbisan: "Mahā Wirat Khemacārī",
@@ -169,6 +175,7 @@ export const sangha = [
   {
     id: 7,
     image: sanghaImg.seven,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Subin Ghosito",
       namePenahbisan: "Subin Ghosito",
@@ -188,6 +195,7 @@ export const sangha = [
   {
     id: 8,
     image: sanghaImg.eight,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Thonglek Aggadhammo",
       namePenahbisan: "Thonglek Aggadhammo",
@@ -207,6 +215,7 @@ export const sangha = [
   {
     id: 9,
     image: sanghaImg.nine,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Prasan Tejadharo",
       namePenahbisan: "Prasan Tejadharo",
@@ -226,6 +235,7 @@ export const sangha = [
   {
     id: 10,
     image: sanghaImg.ten,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Nu Hajjatejo",
       namePenahbisan: "Nu Hajjatejo",
@@ -245,6 +255,7 @@ export const sangha = [
   {
     id: 11,
     image: sanghaImg.eleven,
+    level: "Mahathera",
     upasampada: {
       name: "Bhikkhu Suwan Uṭṭhāno",
       namePenahbisan: "Suwan Uṭṭhāno",
@@ -264,6 +275,7 @@ export const sangha = [
   {
     id: 12,
     image: sanghaImg.twelve,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Nāthasīlo",
       namePenahbisan: "Nāthasīlo",
@@ -283,6 +295,7 @@ export const sangha = [
   {
     id: 13,
     image: sanghaImg.thirteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Tawan Aggatejo",
       namePenahbisan: "Tawan Aggatejo",
@@ -302,6 +315,7 @@ export const sangha = [
   {
     id: 14,
     image: sanghaImg.fourteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Subhācāro",
       namePenahbisan: "Subhācāro",
@@ -321,6 +335,7 @@ export const sangha = [
   {
     id: 15,
     image: sanghaImg.fifteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Ṭhitasaddho",
       namePenahbisan: "Ṭhitasaddho",
@@ -340,6 +355,7 @@ export const sangha = [
   {
     id: 16,
     image: sanghaImg.sixteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Kosalo",
       namePenahbisan: "Kosalo",
@@ -359,6 +375,7 @@ export const sangha = [
   {
     id: 17,
     image: sanghaImg.seventeen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Abhipuñño",
       namePenahbisan: "Abhipuñño",
@@ -378,6 +395,7 @@ export const sangha = [
   {
     id: 18,
     image: sanghaImg.eighteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Kittipañño",
       namePenahbisan: "Kittipañño",
@@ -397,6 +415,7 @@ export const sangha = [
   {
     id: 19,
     image: sanghaImg.nineteen,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
       namePenahbisan: "Ṭhānuttaro",
@@ -416,6 +435,7 @@ export const sangha = [
   {
     id: 20,
     image: sanghaImg.twenty,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Atijāgaro",
       namePenahbisan: "Atijāgaro",
@@ -435,6 +455,7 @@ export const sangha = [
   {
     id: 21,
     image: sanghaImg.twentyOne,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Atthakovido",
       namePenahbisan: "Atthakovido",
@@ -454,6 +475,7 @@ export const sangha = [
   {
     id: 22,
     image: sanghaImg.twentyTwo,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Dhammāvudho",
       namePenahbisan: "Dhammāvudho",
@@ -473,6 +495,7 @@ export const sangha = [
   {
     id: 23,
     image: sanghaImg.twentyThree,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Ṭhānuttaro",
       namePenahbisan: "Ṭhānuttaro",
@@ -492,6 +515,7 @@ export const sangha = [
   {
     id: 24,
     image: sanghaImg.twentyFour,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Punnawich",
       namePenahbisan: "Punnawich",
@@ -511,6 +535,7 @@ export const sangha = [
   {
     id: 25,
     image: sanghaImg.twentyFive,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Jhanananda",
       namePenahbisan: "Jhanananda",
@@ -530,6 +555,7 @@ export const sangha = [
   {
     id: 26,
     image: sanghaImg.twentySix,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Kalyāṇadhammo",
       namePenahbisan: "Kalyāṇadhammo",
@@ -549,6 +575,7 @@ export const sangha = [
   {
     id: 27,
     image: sanghaImg.twentySeven,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Kittichai Sudhammo",
       namePenahbisan: "Kittichai Sudhammo",
@@ -568,6 +595,7 @@ export const sangha = [
   {
     id: 28,
     image: sanghaImg.twentyEight,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Candasīlo",
       namePenahbisan: "Candasīlo",
@@ -587,6 +615,7 @@ export const sangha = [
   {
     id: 29,
     image: sanghaImg.twentyNine,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Paññāvajiro",
       namePenahbisan: "Paññāvajiro",
@@ -606,6 +635,7 @@ export const sangha = [
   {
     id: 30,
     image: sanghaImg.thirty,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Guṇadhammo",
       namePenahbisan: "Guṇadhammo",
@@ -625,6 +655,7 @@ export const sangha = [
   {
     id: 31,
     image: sanghaImg.thirtyOne,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Vaḍḍhano",
       namePenahbisan: "Vaḍḍhano",
@@ -644,6 +675,7 @@ export const sangha = [
   {
     id: 32,
     image: sanghaImg.thirtyTwo,
+    level: "Thera",
     upasampada: {
       name: "Bhikkhu Abhāgamo",
       namePenahbisan: "Abhāgamo",
@@ -663,6 +695,7 @@ export const sangha = [
   {
     id: 33,
     image: sanghaImg.thirtyThree,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Woraphol Ratindharo",
       namePenahbisan: "Woraphol Ratindharo",
@@ -682,6 +715,7 @@ export const sangha = [
   {
     id: 34,
     image: sanghaImg.thirtyFour,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Vichan Pavaro",
       namePenahbisan: "Vichan Pavaro",
@@ -701,6 +735,7 @@ export const sangha = [
   {
     id: 35,
     image: sanghaImg.thirtyFive,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Wongsathorn Candavaṁso",
       namePenahbisan: "Wongsathorn Candavaṁso",
@@ -720,6 +755,7 @@ export const sangha = [
   {
     id: 36,
     image: sanghaImg.thirtySix,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Natthaphong Sudhammo",
       namePenahbisan: "Natthaphong Sudhammo",
@@ -739,6 +775,7 @@ export const sangha = [
   {
     id: 37,
     image: sanghaImg.thirtySeven,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Cittasanto",
       namePenahbisan: "Cittasanto",
@@ -758,6 +795,7 @@ export const sangha = [
   {
     id: 38,
     image: sanghaImg.thirtyEight,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Ghosako",
       namePenahbisan: "Ghosako",
@@ -777,6 +815,7 @@ export const sangha = [
   {
     id: 39,
     image: sanghaImg.thirtyNine,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Abhirato",
       namePenahbisan: "Abhirato",
@@ -796,6 +835,7 @@ export const sangha = [
   {
     id: 40,
     image: sanghaImg.forty,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Cittarakkho",
       namePenahbisan: "Cittarakkho",
@@ -815,6 +855,7 @@ export const sangha = [
   {
     id: 41,
     image: sanghaImg.fortyOne,
+    level: "Majjhima",
     upasampada: {
       name: "Bhikkhu Saccañāṇo",
       namePenahbisan: "Saccañāṇo",
@@ -834,6 +875,7 @@ export const sangha = [
   {
     id: 42,
     image: sanghaImg.fortyTwo,
+    level: "Navaka",
     upasampada: {
       name: "Bhikkhu Kusalo",
       namePenahbisan: "Kusalo",
@@ -853,6 +895,7 @@ export const sangha = [
   {
     id: 43,
     image: sanghaImg.fortyThree,
+    level: "Navaka",
     upasampada: {
       name: "Bhikkhu Chandadhammo",
       namePenahbisan: "Chandadhammo",

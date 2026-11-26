@@ -544,8 +544,8 @@ a {
 .sangha-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 25px;
-  margin-top: 42px;
+  gap: 40px 25px;
+  margin-top: 2rem;
 }
 .sangha-card {
   min-width: 0;
