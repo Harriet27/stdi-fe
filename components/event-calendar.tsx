@@ -34,6 +34,7 @@ const weekdays = ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"];
 export function EventCalendar({ events }: { events: EventItem[] }) {
   const [month, setMonth] = useState(10);
   const [year, setYear] = useState(2026);
+
   const days = useMemo(() => {
     const first = new Date(year, month, 1).getDay();
     const offset = (first + 6) % 7;
@@ -43,11 +44,13 @@ export function EventCalendar({ events }: { events: EventItem[] }) {
       ...Array.from({ length: total }, (_, i) => i + 1),
     ];
   }, [month, year]);
+
   const changeMonth = (delta: number) => {
     const next = new Date(year, month + delta, 1);
     setMonth(next.getMonth());
     setYear(next.getFullYear());
   };
+
   const byDay = new Map(
     events
       .filter((event) => {
@@ -56,10 +59,12 @@ export function EventCalendar({ events }: { events: EventItem[] }) {
       })
       .map((event) => [Number(event.date.slice(-2)), event]),
   );
+
   const upcoming = events.filter((event) => {
     const date = new Date(`${event.date}T12:00:00`);
     return date.getMonth() === month && date.getFullYear() === year;
   });
+
   return (
     <div className="calendar-card">
       <div className="calendar-top">
